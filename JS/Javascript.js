@@ -205,7 +205,6 @@ function onYouTubeIframeAPIReady(){
 //An event listener that detects when a track has ended, uses Youtube API		
 function trackEnd(event){
 	if(event.data == 0 && arrayPosition < playingListLinks.length-1){
-		console.log(playingListLinks.length)
 		arrayPosition += 1;
 		var video = document.getElementById("video")
 		video.src = "https://www.youtube.com/embed/"+ playingListLinks[arrayPosition] +"?controls=0&autoplay=1&rel=0&enablejsapi=1";
