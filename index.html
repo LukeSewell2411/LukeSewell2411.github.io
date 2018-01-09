@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Basic Website</title>
+		<link rel="stylesheet" href="CSS/styles.cs">
+		<script src="http://www.youtube.com/iframe_api"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+		<script src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
+		<script src="JS/Javascript.js"></script>
+	</head>
+	
+	<body>
+		<div>
+			<ul class="nav">
+				<li class="nav">
+					<img src="Assets/daftpunk.png" height="50" alt="Logo">
+				</li>
+				<li class="nav">
+					<a href="Index.html">Home</a>
+				</li>
+				<li class="nav">
+					<a href="Playlists.html">Saved Playlists</a>
+				</li>
+				<li class="nav">
+					<a href="NewPlaylist.html">New Playlist</a>
+				</li>
+				<li class="nav">
+					<a href="DEMO.html">DEMO</a>
+				</li>
+			</ul>
+		</div>
+		
+		<iframe id="video" src="https://www.youtube.com/embed/sFZjqVnWBhc?controls=0&autoplay=1&rel=0&enablejsapi=1"></iframe>
+		<div id="playlist">
+			<p id="currentName" class="padText">Current List: </p>
+			<table class="albumTable">
+				<tr id="playingList">
+					<td>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<canvas id="canvas" width="1100" height="50"></canvas>
+		<input id="textColour" type="color" name="colour" value="#000000">
+	</body>
+</html>

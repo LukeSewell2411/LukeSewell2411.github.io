@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>New playlist</title>
+		<link rel="stylesheet" href="CSS/styles.cs">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+		<script src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
+		<script src="JS/Javascript.js"></script>
+	</head>
+	
+	<body>
+		<div>
+			<ul class="nav">
+				<li class="nav">
+					<img src="Assets/daftpunk.png" height="50" alt="Logo">
+				</li>
+				<li class="nav">
+					<a href="Index.html">Home</a>
+				</li>
+				<li class="nav">
+					<a href="Playlists.html">Saved Playlists</a>
+				</li>
+				<li class="nav">
+					<a href="NewPlaylist.html">New Playlist</a>
+				</li>
+				<li class="nav">
+					<a href="DEMO.html">DEMO</a>
+				</li>
+			</ul>
+		</div>
+		<div class="albumList">
+		<table class="albumTable">
+			<tr id="Homework">
+			<td>
+				<img src="Assets/Daftpunk-homework.jpg" alt="Homework">
+			</td>
+			<td>
+				<p>Homework</p>
+			</td>
+			</tr>
+			<tr id="Discovery">
+			<td>
+				<img src="Assets/Discovery.jpg" alt="Discovery">
+			</td>
+			<td>
+				<p>Discovery</p>
+			</td>
+			</tr>
+			<tr id="HumanAfterAll">
+			<td>
+				<img src="Assets/HumanAfterAll.jpg" alt="HumanAfterAll">
+			</td>
+			<td>
+				<p>Human After All</p>
+			</td>
+			</tr>
+			<tr id="Alive">
+			<td>
+				<img src="Assets/Alive.jpg" alt="Alive">
+			</td>
+			<td>
+				<p>Alive 2017</p>
+			</td>
+			</tr>
+		</table>
+		</div>
+		<div id="trackList">
+		<table class="albumTable">
+			<tr id="tr1" class="draggable">
+			<td>
+				<img id="tr1img" src="Assets/Daftpunk-homework.jpg" alt="Image1">
+			</td>
+			<td>
+				<p id="tr1p" data-data="yuoghR-5-Xs">Daftendirekt</p>
+			</td>
+			</tr>
+			<tr id="tr2" class="draggable">
+			<td>
+				<img id="tr2img" src="Assets/Daftpunk-homework.jpg" alt="Image2">
+			</td>
+			<td>
+				<p id="tr2p" data-data="Wtd6DvLoCsU">Revolution 909</p>
+			</td>
+			</tr>
+			<tr id="tr3" class="draggable">
+			<td>
+				<img id="tr3img" src="Assets/Daftpunk-homework.jpg" alt="Image3">
+			</td>
+			<td>
+				<p id="tr3p" data-data="n1ZqN_VFhdo">Da Funk</p>
+			</td>
+			</tr>
+		</table>
+		</div>
+		<div class="albumList">
+		<input type="text" id="playlistName" class="marginLeft" value="Enter name here">
+		<table class="albumTable">
+			<tr id="dropTable" class="droppable">
+				<td>
+				</td>
+			</tr>
+		</table>
+		<button type="button" id="saveButton" class="marginLeft" onclick="saveList()">Save Playlist</button>
+		</div>
+		
+	</body>
+</html>
