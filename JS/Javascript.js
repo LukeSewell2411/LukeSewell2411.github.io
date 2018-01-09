@@ -18,7 +18,7 @@ var listToPlayTitle = "";
 var playingListLinks = [];
 var arrayPosition = 0;
 var player;
-var scrollTextString = "";
+var scrollTextString = "Robot Rock";
 
 //Waiting for the site to load before any script is executed
 window.onload = function(){
