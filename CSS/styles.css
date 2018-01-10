@@ -19,6 +19,10 @@ div{
 	height: 35vw;
 	margin-left: 2vw;
 }
+#DEMO{
+	width: 70vw;
+	height: 40vw;
+}
 #secondListItem{
 	display: inline-block;
 	font-size: 10px;
